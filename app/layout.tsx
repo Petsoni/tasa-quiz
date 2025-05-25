@@ -9,7 +9,8 @@ const geistSans = Geist({
 
 const indieFlowerSans = Indie_Flower({
   variable: "--font-indie-flower-sans",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"]
 });
 
 const geistMono = Geist_Mono({
