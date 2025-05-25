@@ -9,7 +9,7 @@ export default function ConfirmPageWrapper() {
 	const [isFormFilled, setIsFormFilled] = useState(false);
 
 	useEffect(() => {
-		const filled = localStorage.getItem("filled");
+		const filled = sessionStorage.getItem("filled");
 		setIsFormFilled(filled === "true");
 	}, []);
 

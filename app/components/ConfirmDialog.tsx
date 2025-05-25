@@ -67,7 +67,7 @@ export default function ConfirmDialog({onSuccess}: ConfirmDialogProps) {
 
 	const handleSubmit = () => {
 		if (isVerified) {
-			localStorage.setItem("filled", JSON.stringify(true))
+			sessionStorage.setItem("filled", JSON.stringify(true))
 			onSuccess();
 		} else {
 			setShowErrorDialog(true)
